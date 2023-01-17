@@ -531,7 +531,7 @@
                     
                     var charPersonality = characters[this_chid].personality;
                     if(is_pygmalion){
-                        storyString = name2+"'s Persona: "+$.trim(characters[this_chid].description)+" "+name2+" is "+charPersonality+".\n<START>\n";
+                        storyString = name2+"'s Persona: "+$.trim(characters[this_chid].description)+(($.trim(charPersonality.length) >0)?(" "+name2+" is "+charPersonality+"."):"")+"\n<START>\n";
                     }else{
                         if($.trim(charPersonality.length) > 0){
                             charPersonality = "["+name2+" is "+charPersonality+"]";//"["+name2+"'s personality: "+charPersonality+"]";
