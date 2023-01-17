@@ -556,7 +556,7 @@ function getCharaterFile(directories,response,i){
                     //console.log(data);
 
                     characters[character_i] = {};
-                    characters[character_i] = data;
+                    characters[character_i] = data.replace(' *', " ");
                     i++;
                     character_i++;
                     getCharaterFile(directories,response,i);
